@@ -9,7 +9,7 @@
 </head>
 <body>
    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-blue bg-dark">
         <a class="navbar-brand" href="#">DevOrga</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -21,6 +21,9 @@
                 <a class="button is-primary is-small" href="{{ path('account')}}">
                     <span class="icon"><i class="fas fa-user-circle"></i></span>
                     <strong>{{ app.user.email }}</strong>
+                </a>
+                <a class="button is-light is-small" href="{{ path('admin') }}">
+                    Créer des évenements
                 </a>
                 <a class="button is-light is-small" href="{{ path('app_logout') }}">
                     Déconnexion
