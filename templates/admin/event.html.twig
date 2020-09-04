@@ -8,4 +8,28 @@
     
     <p> créer tes evenements</p>
 
+    <h1>Evenements : {{ Liste_events|length }}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Lieu</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for eventCreate in Liste_events %}
+                <tr>
+                    <th>{{ eventCreate.id }}</th>
+                    <td>{{ eventCreate.nom }}</td>
+                    <td>{{ eventCreate.description }}</td>
+                    <td>{{ eventCreate.lieu }}</td>
+                    <td>{{ eventCreate.date }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
 {% endblock %}

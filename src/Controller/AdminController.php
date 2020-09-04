@@ -42,7 +42,7 @@ class AdminController extends AbstractController
        return $this->render('admin/event.html.twig',[
         'title' => 'Tes participations',
        ]);
-       
+
     }
 
 }
